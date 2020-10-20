@@ -16,8 +16,7 @@ function newNavLink() {
   const navbar = document.querySelector("nav");
   const newLink = document.createElement("a");
   newLink.innerText = "New Link";
-  newLink.classList.add = "p-2";
-  newLink.classList.add = "text-muted";
+  newLink.classList.add("p-2", "text-muted");
   navbar.appendChild(newLink);
 }
 
@@ -25,9 +24,9 @@ function removeSearch() {
   document.querySelector(".blog-header a svg").remove();
 }
 
-function changeJumboBG() {
+function changeJumboBG(color) {
   const jumbotron = document.querySelector(".jumbotron");
-  jumbotron.style.cssText = "background-color: blue !important";
+  jumbotron.style.cssText = `background-color: ${color} !important`;
 }
 
 function changeMainTitleColour() {
@@ -52,7 +51,7 @@ function removeChars() {
     ".blog-post p.blog-post-meta + p"
   );
   allParagraphs.forEach((e) => {
-    e.innerText = e.innerText.slice(50);
+    e.innerText = e.innerText.slice(0, 50);
   });
 }
 
