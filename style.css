@@ -1,14 +1,14 @@
 /*
             EX1) Write a selector to target the main title of the page (DONE)
             EX2) Write a selector to target every children of the navbar (DONE)
-            EX3) Write a selector to target the "continue reading..." inside the jumbotron
-            EX4) Write a selector to target the first blogpost
-            EX5) Write a selector to target the "even" links in the navbar
-            EX6) Write a selector to target the last blog post
-            EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )
-            EX8) Write a selector to target the second post author
-            EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
-            EX10) Write a selector to target the footer
+            EX3) Write a selector to target the "continue reading..." inside the jumbotron (DONE)
+            EX4) Write a selector to target the first blogpost (DONE)
+            EX5) Write a selector to target the "even" links in the navbar (DONE)
+            EX6) Write a selector to target the last blog post (DONE)
+            EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives ) (DONE)
+            EX8) Write a selector to target the second post author (DONE)
+            EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly (DONE)
+            EX10) Write a selector to target the footer (DONE)
         */
 
 .bd-placeholder-img {
@@ -38,4 +38,33 @@ nav * {
 
 .jumbotron p > a {
   color: yellow !important;
+}
+
+.blog-main h3 + .blog-post {
+  background-color: orange;
+}
+
+nav a:nth-child(even) {
+  background-color: pink;
+}
+
+.blog-post:last-of-type {
+  background-color: cyan;
+}
+
+.blog-sidebar div:nth-child(2) li {
+  background-color: blue;
+}
+
+div.blog-post:nth-child(3) .blog-post-meta a {
+  border: 1px solid red;
+}
+
+.blog-footer p:last-child a {
+  background-color: orange;
+  font-size: 50px !important;
+}
+
+footer {
+  background-color: pink;
 }
